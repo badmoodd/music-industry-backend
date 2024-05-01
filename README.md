@@ -1,36 +1,3 @@
 # CRUD Template (backend)
 
-## Installation
-
-Clone repository:
-
-```sh
-git clone https://github.com/badmoodd/crud-template-backend.git
-```
-
-## Build the Project
-
-Navigate to the project directory and build the project using Gradle:
-
-```shell
-cd crud-template-backend
-gradle build
-```
-
-## Run the Database
-
-Navigate to the project directory and start the database container using Docker Compose:
-
-```shell
-cd src/main/resources/static/music_industry_db/
-docker-compose up -d
-```
-
-## Run the Application
-
-Now you can run backend service:
-
-```shell
-cd crud-template-backend
-gradle bootRun
-```
+Для бэкенда нужен докер, джава, градл. Сначала запускаем базу. Переходим в папку src/main/resources/static/music_industry_db/docker-compose.yaml и нажимаем на две стрелочки возле слова services. Дальше запускаем сам бэкенд и переходим в мейн и запускаем. Свагер(документация по бэку) доступен на адресе http://localhost:8081/swagger-ui.html. Дальше переходим на в соответсвующий проект фронта. открываем терминал и пишем две команды 'npm i' и 'npm run dev'. В консоли фронт напишет на какой адресс заходить
