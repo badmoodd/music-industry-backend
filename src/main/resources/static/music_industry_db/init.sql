@@ -49,7 +49,7 @@ CREATE TABLE concerts
 (
     concert_id SERIAL PRIMARY KEY,
     title      VARCHAR(255),
-    date       DATE,
+    date       VARCHAR(255),
     venue      VARCHAR(255),
     city       VARCHAR(255),
     country    VARCHAR(255)
@@ -60,7 +60,7 @@ CREATE TABLE album_sales
     sale_id    SERIAL PRIMARY KEY,
     album      VARCHAR(255),
     quantity   INT,
-    sale_date  DATE,
+    sale_date  VARCHAR(255),
     total_sale DECIMAL(10, 2),
     platform   VARCHAR(255)
 );
@@ -70,7 +70,7 @@ CREATE TABLE song_sales
     sale_id    SERIAL PRIMARY KEY,
     song       VARCHAR(255),
     quantity   INT,
-    sale_date  DATE,
+    sale_date  VARCHAR(255),
     total_sale DECIMAL(10, 2),
     platform   VARCHAR(255)
 );
